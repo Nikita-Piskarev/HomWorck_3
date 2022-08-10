@@ -1,29 +1,100 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: 300;
 }
 
 :root {
+    font-family: sans-serif;
+    
+}
 
+.article-weekly-sales,
+.article-weekly-orders,
+.article-visitors-online {
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    position: relative;
+    padding: 40px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .article-weekly-sales {
-    width: 150px;
-    height: 75px;
     background-color: deeppink;
 }
 
-.article-weekly-sales__title {
+.article-weekly-orders {
+    background-color: cornflowerblue;
+} 
 
+.article-visitors-online {
+    background-color:darkseagreen;
 }
 
-.article-weekly-sales__icon {
-
+.article-weekly-sales::before,
+.article-weekly-sales::after,
+.article-weekly-orders::before,
+.article-weekly-orders::after,
+.article-visitors-online::before,
+.article-visitors-online::after {
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    opacity: .2;
+    border-radius: 50%;
+    background-color: white;
 }
 
-.article-weekly-sales__subtitle {
-
+.article-weekly-sales::before,
+.article-weekly-orders::before,
+.article-visitors-online::before {
+    top: -38px;
+    right: -100px;
 }
 
-.article-weekly-sales__paragraph {
+.article-weekly-sales::after,
+.article-weekly-orders::after,
+.article-visitors-online::after {
+    top: 158px;
+    right: -20px;
+}
 
+.article-weekly-sales__title,
+.article-weekly-orders__title,
+.article-visitors-online__title {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+}
+
+.article-weekly-sales__icon,
+.article-weekly-orders__icon,
+.article-visitors-online__icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 -10px 200px;
+    filter: rgb(255, 255, 255);
+}
+
+.article-weekly-sales__subtitle,
+.article-weekly-orders__subtitle,
+.article-visitors-online__subtitle {
+    margin: 34px 0 0 0;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.article-weekly-sales__paragraph,
+.article-weekly-orderss__paragraph,
+.article-visitors-online__paragraph {
+    margin: 75px 0 0 0;
+    font-size: 20px;
+    font-weight: 400;
 }
