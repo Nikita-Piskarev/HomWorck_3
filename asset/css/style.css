@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+
+}
+
+.article-weekly-sales {
+    width: 150px;
+    height: 75px;
+    background-color: deeppink;
+}
+
+.article-weekly-sales__title {
+
+}
+
+.article-weekly-sales__icon {
+
+}
+
+.article-weekly-sales__subtitle {
+
+}
+
+.article-weekly-sales__paragraph {
+
+}
